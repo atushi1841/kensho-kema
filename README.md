@@ -18,6 +18,13 @@ ke-ma.net (懸賞マニア) — the 5th sweepstakes collection source in the Ken
   so its entries are collected in a single pass (no tweet scraping required).
 - No network, no API key, no account required.
 
+## Data Source: Apify Store
+
+The underlying dataset is also available as a managed Apify Actor:
+
+- **kensho-sweep-mcp** — [https://apify.com/atushi1841/acts/kensho-sweep-mcp](https://apify.com/atushi1841/acts/kensho-sweep-mcp)
+  (Actor ID: `kjf9ZKQ5zWyOQxzvL`) — the parent sweepstakes dataset that includes ke-ma.net observations
+
 ## Run
 
 ```bash
@@ -41,9 +48,25 @@ This MCP Connector follows the Kensho revenue sharing model:
 - PPE model continues for internal operations
 - Revenue generated from external queries via Apify MCP integration
 
+## Installation (Smithery)
+
+Install via Smithery registry:
+```bash
+smithery install @atushi1841/kensho-kema
+```
+
+## More MCP Servers
+
+- **[kensho-kaku](https://github.com/atushi1841/kensho-kaku)** — ken-kaku.com sweepstakes data
+- **[kensho-kclub](https://github.com/atushi1841/kensho-kclub)** — kenshou.club sweepstakes data
+- **[kensho-sweep-mcp](https://github.com/atushi1841/kensho-sweep-mcp)** — Full pipeline sweepstakes data
+- **[japan-anime-figure-mcp](https://github.com/atushi1841/japan-anime-figure-mcp)** — Anime figure price comparison
+- **[tcg-price-japan](https://github.com/atushi1841/tcg-price-japan)** — TCG used-price trends
+
+## Apify Actors
+
+- **[Apify Store: kensho-sweep-mcp](https://apify.com/atushi1841/acts/kensho-sweep-mcp)** — Parent sweepstakes dataset
+
 ## Integration Notes
 
-The kensho-kema MCP Connector serves as an additional data source for the main Kensho
-sweepstakes collection, complementing the existing knshow.com, ken-kaku.com, kenshou.club,
-and cp.meikan.org sources. It provides specialized coverage of the ke-ma.net (懸賞マニア)
-sweepstakes ecosystem.
+The kensho-kema MCP Connector serves as an additional data source for the main Kensho sweepstakes collection, complementing the existing knshow.com, ken-kaku.com, kenshou.club, and cp.meikan.org sources. It provides specialized coverage of the ke-ma.net (懸賞マニア) sweepstakes ecosystem.
